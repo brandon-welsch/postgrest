@@ -16,7 +16,7 @@
     "DB_URI": {
       "description": "Database connection string, e.g. postgres://user:pass@xxxxxxx.rds.amazonaws.com/mydb",
       "required": true,
-      "value": "$DATABASE_URL"
+      "value": "$SCALINGO_POSTGRESQL_URL"
     },
     "DB_SCHEMA": {
       "description": "The database schema to expose to REST clients. Tables, views and stored procedures in this schema will get API endpoints",
@@ -56,11 +56,6 @@
     "PRE_REQUEST": {
       "description": "A schema-qualified stored procedure name to call right after switching roles for a client request",
       "required": false
-    },
-    "PORT": {
-      "description": "Required to execute the application, keep $PORT value",
-      "required": true,
-      "value": "$PORT"
     }
   },
   "formation": {
