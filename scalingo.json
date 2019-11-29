@@ -56,6 +56,11 @@
     "PRE_REQUEST": {
       "description": "A schema-qualified stored procedure name to call right after switching roles for a client request",
       "required": false
+    },
+    "PORT": {
+      "description": "Required to execute the application, keep $PORT value",
+      "required": true,
+      "value": "$PORT"
     }
   },
   "formation": {
